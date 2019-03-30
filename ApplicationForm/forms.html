@@ -4,8 +4,10 @@
 
 <head>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
     <title>
-        HTML Forms
+        Application Form
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,21 +25,29 @@ border: 2px solid black;
 font-size: 30px;
 }
 
+#c.container
+{
+background-image: url("bgpic.jpg");
+}
+
 </style>
 
 </head>
 
-<body background="bgpic.jpg" style="background-size: 100%">
+<body>
 
-<div class="box">
+  <div id="c" class="container">
+
+<div class="box" style="text-align:center">
 Application Form
 </div>
+
 
 <form action="https://drive.google.com/drive/u/0/folders/1dYyzo9Ypk-7mPpSSKDzJJglym5RonLhP" target="_blank" method="get">
   
   <fieldset>
   
-    <legend><b style="font-size: 25px">Personal Information</b></legend>
+    <h2 style="font-size: 25px">Personal Information</h2>
   
   <h3>First Name:</h3>
   <input type="text" value="">
@@ -54,8 +64,6 @@ Application Form
   <h3>Email:</h3>
   <input type="email" name="email">
   <br>
-
-  <hr>
   
   <h3>Gender</h3>  
   <input type="radio" name="gender" value="Male">Male
@@ -63,8 +71,7 @@ Application Form
   <input type="radio" name="gender" value="female">Female
   <br>
   <input type="radio" name="gender" value="other">Other
-  <hr>
-
+  
   <h3>Skills</h3>
   <select name="Skills" size="3" multiple>
     <option Value="C">C</option>
@@ -77,29 +84,23 @@ Application Form
     <option Value="SQL">SQL</option>
     <option Value="Android">Android</option>
   </select>
-  <hr>
-
+  
 <h3>Relocation</h3>
 <input type="checkbox" name="Yes" value="Yes">Yes
 <br>
 <input type="checkbox" name="No" value="No">No
-<hr>
 
 <h3>Cover Letter Message</h3>
 <textarea name="coverletter" rows="20" cols="50">
 Please enter your cover letter here.
 </textarea>
-<hr>
 
 <h3>Update Profile Photo:</h3>
 <input type="button" onclick="alert('Choose image from drive')" 
 value="Upload Photo">
 
-<hr>
-
 <h3>Attach Resume:</h3>
 <input type="file" name="myFile">  
-<hr>
 
 <input type="submit" value="Submit">
 <input type="reset">
@@ -107,13 +108,15 @@ value="Upload Photo">
 <br>
 
 <input type="button" onclick="alert('This page is safe!')" value="Click Me!">
+<br>
 
 </fieldset>
 </form>
 
-<p>If you click the "Submit" button, 
-  the form-data will be sent to Bhoomika Google Drive.
-</p>
+<footer style="text-align: center">
+  <em><b>Copyrights Reserved</b></em>
+</footer>
 
+</div>
 </body>
 </html>
